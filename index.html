@@ -3,12 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>仮 | Ray</title>
-  <link rel="stylesheet" href="style.css">
+  <title>ポートフォリオ | Raysill</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    #about {
+      text-align: center;
+    }
+    #about img {
+      border-radius: 50%;
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+    .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .work-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .work-card img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    form input, form textarea {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.7rem;
+      border: none;
+      background: #222;
+      color: white;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Ray1</h1>
+    <h1>Raysill</h1>
     <nav>
       <a href="#about">自己紹介</a>
       <a href="#works">作品</a>
@@ -17,32 +100,38 @@
   </header>
 
   <section id="about">
+    <img src="https://via.placeholder.com/150" alt="プロフィール画像">
     <h2>自己紹介</h2>
-    <p>ここに自己紹介文を入れます。</p>
+    <p>こんにちは！Raysillです。ここに自己紹介やスキル、得意分野などを書きましょう。</p>
   </section>
 
   <section id="works">
     <h2>作品</h2>
-    <div class="work-card">
-      <img src="sample1.png" alt="作品1">
-      <p>作品1の説明</p>
+    <div class="works">
+      <div class="work-card">
+        <img src="https://via.placeholder.com/400x250" alt="作品1">
+        <p>作品1の説明</p>
+      </div>
+      <div class="work-card">
+        <img src="https://via.placeholder.com/400x250" alt="作品2">
+        <p>作品2の説明</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>お問い合わせ</h2>
     <form>
-      <input type="text" placeholder="お名前">
-      <input type="email" placeholder="メールアドレス">
-      <textarea placeholder="メッセージ"></textarea>
+      <input type="text" placeholder="お名前" required>
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea rows="5" placeholder="メッセージ" required></textarea>
       <button type="submit">送信</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Ray2</p>
+    <p>© 2025 Raysill</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
